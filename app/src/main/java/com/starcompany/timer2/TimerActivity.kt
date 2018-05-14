@@ -1,15 +1,14 @@
 package com.starcompany.timer2
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.ListView
-import kotlinx.android.synthetic.main.activity_main.*
 
 class TimerActivity : AppCompatActivity() {
 
+    /*
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
@@ -26,7 +25,7 @@ class TimerActivity : AppCompatActivity() {
             }
         }
         false
-    }
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,17 +45,9 @@ class TimerActivity : AppCompatActivity() {
 
 
 
+        val fragmentManager = getFragmentManager()
 
-
-
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-
-        //supportFragmentManager.findFragmentById(R.id.contentFrame);
-        // list 表示
-
-        //val fragmentManager = getFragmentManager()
-
-        //fragmentManager.beginTransaction().replace(R.id.container, TimerFragment.newInstance()).commit()
+        fragmentManager.beginTransaction().replace(R.id.container, TimerFragment.newInstance()).commit()
 
 
 
