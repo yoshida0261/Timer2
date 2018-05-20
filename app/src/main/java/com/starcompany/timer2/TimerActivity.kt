@@ -2,9 +2,6 @@ package com.starcompany.timer2
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
-import android.widget.ArrayAdapter
-import android.widget.ListView
 
 class TimerActivity : AppCompatActivity() {
 
@@ -32,6 +29,7 @@ class TimerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        /*
         val Data = arrayOf("1:00", "3:00", "5:00", "10:00", "15:00", "30:00")
 
         val arrayAdapter = ArrayAdapter(
@@ -43,7 +41,7 @@ class TimerActivity : AppCompatActivity() {
         listView.adapter = arrayAdapter
         listView.setOnItemClickListener {p,v,pos, id->Log.d("tag","test" + pos.toString())}
 
-
+        */
 
         val fragmentManager = getFragmentManager()
 

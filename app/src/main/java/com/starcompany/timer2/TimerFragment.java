@@ -32,7 +32,7 @@ public class TimerFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         String[] Data = {
-                "1:00", "3:00", "5:00", "10:00", "15:00", "30:00"
+                "1:00", "2:00", "3:00", "5:00", "10:00", "15:00", "30:00"
         };
 
         ArrayAdapter<String> arrayAdapter =
